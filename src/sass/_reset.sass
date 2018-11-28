@@ -1,0 +1,164 @@
+/**
+	Style Sheet for HTML template
+	version: 1.0
+	created: 28.11.2018
+	author: Serhii Tiutin
+	website: https://website.com
+	*/
+
+@import "vars"	
+
+*
+	margin: 0
+	padding: 0
+
+html
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+
+body
+	margin: 0
+	padding: 0
+	line-height: 1.2
+	-moz-osx-font-smoothing: grayscale
+	-webkit-font-smoothing: antialiased
+	position: relative
+	width: 100%
+	min-width: 320px
+	font-family: $primary-font
+
+main, li
+	display: block
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+
+p
+	margin: 0
+	padding-bottom: 10px
+
+ul, ol, dl
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+dd, label, figure
+	margin: 0
+	padding: 0
+
+blockquote, q
+	quotes: none
+	margin: 0
+	padding: 0
+	&:before,
+	&:after
+		content: ''
+
+img
+	max-width: 100%
+	height: auto
+	border: 0
+
+hr
+	box-sizing: content-box
+	height: 0
+	overflow: visible
+
+pre, code, kbd, samp
+	margin: 0
+	padding: 0
+	font-family: monospace, monospace
+
+a
+	background-color: transparent
+	text-decoration: none
+	transition: all 500ms
+	&:hover
+		cursor: pointer
+
+strong, b
+	font-weight: 700
+
+progress
+	vertical-align: baseline
+
+details
+	display: block
+
+summary
+	display: list-item
+
+abbr[title], dfn[title]
+	border-bottom: none
+	text-decoration: underline
+	text-decoration: underline dotted
+	cursor: help
+
+textarea
+	overflow: auto
+	margin: 0
+
+legend
+	box-sizing: border-box
+	color: inherit
+	display: table
+	max-width: 100%
+	padding: 0
+	white-space: normal
+
+button, input, optgroup, select
+	margin: 0
+
+button, input
+	overflow: visible
+
+button, select
+	text-transform: none
+
+button, [type="button"], [type="reset"], [type="submit"]
+	-webkit-appearance: button
+	transition: all 500ms
+	overflow: visible
+	border: 0
+	font: inherit
+	-webkit-font-smoothing: inherit
+	letter-spacing: inherit
+	background: none
+	cursor: pointer
+	&::-moz-focus-inner
+		border-style: none
+		padding: 0
+	&:-moz-focusring
+		outline: 1px dotted ButtonText
+
+[type="checkbox"], [type="radio"]
+	box-sizing: border-box
+	padding: 0
+
+[type="search"]
+	-webkit-appearance: textfield
+	outline-offset: -2px
+	&::-webkit-search-decoration
+		-webkit-appearance: none
+
+[type="number"]
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button
+		height: auto
+
+[type="checkbox"],
+[type="radio"]
+	box-sizing: border-box
+	padding: 0
+
+::-webkit-file-upload-button
+	-webkit-appearance: button
+	font: inherit
+
+::-moz-focus-inner
+	padding: 0
+	border: 0
+
+::focus
+	outline: none

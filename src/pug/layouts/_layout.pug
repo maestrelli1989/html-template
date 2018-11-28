@@ -1,0 +1,42 @@
+//-
+	Main layout for HTML template
+	version: 1.0
+	created: 28.11.2018
+	author: Serhii Tiutin
+	website: https://website.com
+
+include ../mixins/_mixins
+
+doctype html
+html(lang='en')
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+		//- Meta data mixin
+		block meta-data
+		//- Favicons
+		include ../includes/_favicons
+		//- Fonts
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500,700")
+		//- Bootstrap
+		link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css")
+		//- CSS file with reboot styles
+		link(rel="stylesheet", href="css/header.min.css")
+		//- Block for additional style sheets
+		block extra-css
+	body
+		//- Page content
+		block main-content
+		//- Main CSS file
+		link(rel="stylesheet", href="css/main.min.css")
+		//- jQuery
+		script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+		//- Popper
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+		//- Bootstrap
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js")
+		//- Main Javascript / jQuery scripts
+		script(src="js/common.js")
+		//- Additional Javascript / jQuery scripts
+		block extra-js
